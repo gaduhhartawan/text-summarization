@@ -88,7 +88,10 @@ const TextSummarizer = () => {
             type="submit"
             disabled={!summary}
             className="px-4 py-2 bg-black-90 text-white rounded hover:bg-black-100 disabled:bg-gray-400 disabled:cursor-not-allowed"
-            onClick={() => setSummary("")}
+            onClick={() => {
+              setSummary("");
+              setInputText("");
+            }}
           >
             Clear Summary
           </button>
